@@ -11,10 +11,12 @@
     max-width: 110px;
 }
 
+/* sobrescrevendo bootstrap */
 .navbar-dark .navbar-nav .nav-link {
     color: white;
     &:hover {
         text-decoration: none;
+        color: $hover-color;
     }
 }
 

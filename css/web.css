@@ -1,22 +1,23 @@
+/* largura do conteudo em web */
 @media all and (min-width: 1400px) {
   .header__menu {
     width: 70%;
     margin: 0 auto;
   }
 
-  .footer__container {
+  .footer__wrapper {
     width: 70%;
     margin: 0 auto;
   }
 }
 @media all and (min-width: 768px) {
   .banner {
+    margin-top: 0;
     background: url("../assets/banner.png") center no-repeat;
     background-size: cover;
     border-bottom: 1px solid #de931a;
-    margin-top: 0;
   }
-  .banner__container {
+  .banner__wrapper {
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -36,19 +37,25 @@
   .banner__phone {
     align-self: flex-end;
   }
+  .banner__square {
+    display: block;
+  }
 
   .content {
-    display: flex;
-    align-items: center;
-    min-height: 50vh;
     width: 70%;
     margin: 0 auto;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+  .content__wrapper {
+    padding: 15px 0;
   }
 
-  .footer__container {
+  .footer__wrapper {
     flex-direction: row;
   }
-  .footer__container > * {
+  .footer__wrapper > * {
     margin-bottom: 0;
   }
 }

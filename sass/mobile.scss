@@ -1,47 +1,63 @@
 @import 'variables';
 
 .header {
-    background-color: $primary-color;
-    color: white;
     padding: 15px 0;
+    background-color: $primary-color;
 }
 
 .banner {
     margin-top: 15px;
+    font-weight: bold;
+
+    &__wrapper {
+        position: relative;
+    }
+
     &__welcome {
+        padding: 15px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 15px;
         text-align: center;
     }
 
     &__line {
-        width: 20%;
-        height: 4px;
         margin-bottom: 8px;
-        background-color: $primary-color;
+        height: 4px;
+        width: 20%;
         display: none;
+        background-color: $primary-color;
     }
 
     &__title {
-        color: $primary-color;
-        font-size: 1.6rem;
         margin-bottom: 15px;
-        font-weight: bold;
+        font-size: 1.6rem;
+        font-weight: inherit;
+        color: $primary-color;
+    }
+    
+    &__phone {
+        font-size: 3rem;
+        font-weight: inherit;
+        color: $secondary-color;
     }
 
-    &__phone {
-        color: $secondary-color;
-        font-size: 3rem;
-        font-weight: bold;
+    &__square {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        height: 20px;
+        width: 20px;
+        transform: translateY(50%);
+        display: none;
+        background-color: $secondary-color;
     }
 }
 
 .content {
-    &__container {
+    &__wrapper {
         height: 100%;
-        padding: 15px 0;
+        padding-bottom: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -51,20 +67,22 @@
         }
 
     }
+
     &__buttons {
         text-align: center;
         margin-bottom: 15px;
     }
+
     &__button {
-        border: 1px solid $primary-color;
-        font-size: 1.2rem;
-        border-radius: 20px;
         padding: 5px 30px;
+        font-size: 1.2rem;
+        border: 1px solid $primary-color;
+        border-radius: 20px;
         background-color: white;
         transition: .4s ease all;
 
         &:hover {
-            background-color: rgb(231, 231, 231);
+            background-color: $hover-color;
         }
 
         &:not(:last-child) {
@@ -73,27 +91,32 @@
     }
 
     &__title {
-        color: $light-blue;
-        font-size: 1.5rem;
         margin-bottom: 15px;
+        font-size: 1.5rem;
         font-weight: bold;
+        color: $light-blue;
+    }
+
+    &__description {
+        line-height: 1.6rem;
     }
     
     &__list-item {
         margin-bottom: 7px;
 
         &::marker {
-            color: $secondary-color;
             font-size: 1.5rem;
+            color: $secondary-color;
         }
     }
 }
 
 .footer {
-    background-color: $primary-color;
     padding: 25px 0;
+    background-color: $primary-color;
     text-align: center;
-    &__container {
+
+    &__wrapper {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column-reverse;

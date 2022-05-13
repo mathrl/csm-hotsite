@@ -7,7 +7,7 @@
         }
     }
     .footer {
-        &__container {
+        &__wrapper {
             @include web-container;
         }
     }
@@ -15,13 +15,12 @@
 
 @media all and(min-width: 768px) {
     .banner {
+        margin-top: 0;
         background: url('../assets/banner.png') center no-repeat;
         background-size: cover;
         border-bottom: 1px solid $secondary-color;
-    margin-top: 0;
 
-
-        &__container {
+        &__wrapper {
             @include web-container;
             display: flex;
             justify-content: flex-end;
@@ -44,25 +43,30 @@
         &__phone {
            align-self: flex-end;
         }
+
+        &__square {
+            display: block;
+        }
     }
 
     .content {
+        @include web-container;
+        min-height: 50vh;
         display: flex;
         align-items: center;
-        min-height: 50vh;
-        @include web-container;
 
+        &__wrapper {
+            padding: 15px 0;
+        }
     }
 
     .footer {
-        &__container {
+        &__wrapper {
             flex-direction: row;
 
-            
             & > * {
                 margin-bottom: 0;
             }
         }
-
     }
 }

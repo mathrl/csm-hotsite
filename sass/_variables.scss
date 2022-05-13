@@ -2,9 +2,11 @@
 $primary-color: #082148;
 $secondary-color: #de931a;
 $light-blue: #042a5b;
+$hover-color: #c2c2c2;
 
 $default-font: 'Roboto', sans-serif;
 
+/* largura do conteudo em web */
 $web-width: 70%;
 
 @mixin web-container {

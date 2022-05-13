@@ -1,46 +1,60 @@
+/* largura do conteudo em web */
 .header {
-  background-color: #082148;
-  color: white;
   padding: 15px 0;
+  background-color: #082148;
 }
 
 .banner {
   margin-top: 15px;
+  font-weight: bold;
+}
+.banner__wrapper {
+  position: relative;
 }
 .banner__welcome {
+  padding: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 15px;
   text-align: center;
 }
 .banner__line {
-  width: 20%;
-  height: 4px;
   margin-bottom: 8px;
-  background-color: #082148;
+  height: 4px;
+  width: 20%;
   display: none;
+  background-color: #082148;
 }
 .banner__title {
-  color: #082148;
-  font-size: 1.6rem;
   margin-bottom: 15px;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: inherit;
+  color: #082148;
 }
 .banner__phone {
-  color: #de931a;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: inherit;
+  color: #de931a;
+}
+.banner__square {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  height: 20px;
+  width: 20px;
+  transform: translateY(50%);
+  display: none;
+  background-color: #de931a;
 }
 
-.content__container {
+.content__wrapper {
   height: 100%;
-  padding: 15px 0;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.content__container > * {
+.content__wrapper > * {
   padding: 5px;
 }
 .content__buttons {
@@ -48,46 +62,49 @@
   margin-bottom: 15px;
 }
 .content__button {
-  border: 1px solid #082148;
-  font-size: 1.2rem;
-  border-radius: 20px;
   padding: 5px 30px;
+  font-size: 1.2rem;
+  border: 1px solid #082148;
+  border-radius: 20px;
   background-color: white;
   transition: 0.4s ease all;
 }
 .content__button:hover {
-  background-color: #e7e7e7;
+  background-color: #c2c2c2;
 }
 .content__button:not(:last-child) {
   margin-bottom: 10px;
 }
 .content__title {
-  color: #042a5b;
-  font-size: 1.5rem;
   margin-bottom: 15px;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #042a5b;
+}
+.content__description {
+  line-height: 1.6rem;
 }
 .content__list-item {
   margin-bottom: 7px;
 }
 .content__list-item::marker {
-  color: #de931a;
   font-size: 1.5rem;
+  color: #de931a;
 }
 
 .footer {
-  background-color: #082148;
   padding: 25px 0;
+  background-color: #082148;
   text-align: center;
 }
-.footer__container {
+.footer__wrapper {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column-reverse;
   align-items: center;
   color: white;
 }
-.footer__container > * {
+.footer__wrapper > * {
   margin-bottom: 20px;
 }
 .footer__copyright {
