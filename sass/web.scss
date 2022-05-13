@@ -68,5 +68,10 @@
                 margin-bottom: 0;
             }
         }
+
+        /* posicionar logos após copyright */
+        &__logo {
+            order: 1;
+        }
     }
 }
