@@ -30,8 +30,14 @@
   font-weight: bold;
 }
 
-.content > * {
-  padding: 10px;
+.content__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content__container > * {
+  padding: 5px;
 }
 .content__buttons {
   text-align: center;
@@ -48,22 +54,27 @@
 .content__button:hover {
   background-color: #e7e7e7;
 }
+.content__button:not(:last-child) {
+  margin-bottom: 10px;
+}
 .content__title {
   color: #042a5b;
   font-size: 1.5rem;
   margin-bottom: 15px;
   font-weight: bold;
 }
-.content__list {
-  list-style-image: url("../assets/elipse.svg");
-}
 .content__list-item {
   margin-bottom: 7px;
+}
+.content__list-item::marker {
+  color: #de931a;
+  font-size: 1.5rem;
 }
 
 .footer {
   background-color: #082148;
-  padding: 15px 0;
+  padding: 25px 0;
+  text-align: center;
 }
 .footer__container {
   display: flex;
@@ -71,6 +82,12 @@
   flex-direction: column-reverse;
   align-items: center;
   color: white;
+}
+.footer__container > * {
+  margin-bottom: 20px;
+}
+.footer__copyright {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=mobile.css.map */

@@ -39,20 +39,17 @@
   .content {
     display: flex;
     align-items: center;
-    min-height: 300px;
+    min-height: 350px;
     height: 50vh;
     width: 70%;
     margin: 0 auto;
   }
-  .content__container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
 
   .footer__container {
     flex-direction: row;
+  }
+  .footer__container > * {
+    margin-bottom: 0;
   }
 }
 
