@@ -1,0 +1,52 @@
+@import 'variables';
+
+@media all and(min-width: 760px) {
+
+    .header {
+        &__menu {
+            @include web-container;
+        }
+    }
+
+    .banner {
+        background: url('../assets/banner.png') center no-repeat;
+        background-size: cover;
+        border-bottom: 1px solid $secondary-color;
+
+        &__container {
+            @include web-container;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        &__welcome {
+            padding: 30px 30px;
+            display: flex;
+            min-height: 50vh;
+        }
+
+        &__line {
+            display: block;
+        }
+    
+        &__title {
+           text-align: left;
+        }
+    
+        &__phone {
+           align-self: flex-end;
+        }
+    }
+
+    .content {
+        @include web-container;
+        padding: 1.5rem;
+    }
+
+    .footer {
+        &__container {
+            @include web-container;
+            flex-direction: row;
+        }
+    }
+}

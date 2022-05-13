@@ -1,4 +1,13 @@
 
 $primary-color: #082148;
 $secondary-color: #de931a;
-$default-font: sans-serif;
+$light-blue: #042a5b;
+
+$default-font: 'Roboto', sans-serif;
+
+$web-width: 70%;
+
+@mixin web-container {
+    width: $web-width;
+    margin: 0 auto;
+}
