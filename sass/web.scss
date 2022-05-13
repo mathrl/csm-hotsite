@@ -14,11 +14,12 @@
 }
 
 @media all and(min-width: 768px) {
-
     .banner {
         background: url('../assets/banner.png') center no-repeat;
         background-size: cover;
         border-bottom: 1px solid $secondary-color;
+    margin-top: 0;
+
 
         &__container {
             @include web-container;
@@ -48,8 +49,7 @@
     .content {
         display: flex;
         align-items: center;
-        min-height: 350px;
-        height: 50vh;
+        min-height: 50vh;
         @include web-container;
 
     }

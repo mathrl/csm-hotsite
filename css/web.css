@@ -14,6 +14,7 @@
     background: url("../assets/banner.png") center no-repeat;
     background-size: cover;
     border-bottom: 1px solid #de931a;
+    margin-top: 0;
   }
   .banner__container {
     width: 70%;
@@ -39,8 +40,7 @@
   .content {
     display: flex;
     align-items: center;
-    min-height: 350px;
-    height: 50vh;
+    min-height: 50vh;
     width: 70%;
     margin: 0 auto;
   }
