@@ -1,5 +1,7 @@
 .header {
   background-color: #082148;
+  color: white;
+  padding: 15px 0;
 }
 
 .banner__welcome {
@@ -29,7 +31,7 @@
 }
 
 .content > * {
-  padding: 7px;
+  padding: 10px;
 }
 .content__buttons {
   text-align: center;
@@ -47,13 +49,17 @@
   margin-bottom: 15px;
   font-weight: bold;
 }
+.content__list {
+  list-style-image: url("../assets/elipse.svg");
+}
 
 .footer {
   background-color: #082148;
+  padding: 15px 0;
 }
 .footer__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column-reverse;
   align-items: center;
   color: white;

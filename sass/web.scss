@@ -22,7 +22,7 @@
         &__welcome {
             padding: 30px 30px;
             display: flex;
-            min-height: 50vh;
+            min-height: 35vh;
         }
 
         &__line {
@@ -39,8 +39,20 @@
     }
 
     .content {
+        display: flex;
+        align-items: center;
+        min-height: 300px;
+        height: 45vh;
         @include web-container;
-        padding: 1.5rem;
+
+        &__container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            
+        }
     }
 
     .footer {

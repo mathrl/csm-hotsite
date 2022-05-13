@@ -7,12 +7,25 @@
     font-family: $default-font;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.logo {
+    max-width: 110px;
+}
 
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
+
+.nav-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
 
