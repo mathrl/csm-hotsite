@@ -1,9 +1,15 @@
-@media all and (min-width: 760px) {
+@media all and (min-width: 1400px) {
   .header__menu {
     width: 70%;
     margin: 0 auto;
   }
 
+  .footer__container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 768px) {
   .banner {
     background: url("../assets/banner.png") center no-repeat;
     background-size: cover;
@@ -18,7 +24,7 @@
   .banner__welcome {
     padding: 30px 30px;
     display: flex;
-    min-height: 35vh;
+    min-height: 40vh;
   }
   .banner__line {
     display: block;
@@ -34,7 +40,7 @@
     display: flex;
     align-items: center;
     min-height: 300px;
-    height: 45vh;
+    height: 50vh;
     width: 70%;
     margin: 0 auto;
   }
@@ -46,8 +52,6 @@
   }
 
   .footer__container {
-    width: 70%;
-    margin: 0 auto;
     flex-direction: row;
   }
 }

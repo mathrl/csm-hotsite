@@ -16,7 +16,7 @@
     }
 
     &__line {
-        width: 30%;
+        width: 20%;
         height: 4px;
         margin-bottom: 8px;
         background-color: $primary-color;
@@ -38,7 +38,7 @@
 }
 
 .content {
-
+    
     & > * {
         padding: 10px;
     }
@@ -49,9 +49,15 @@
     }
     &__button {
         border: 1px solid $primary-color;
+        font-size: 1.2rem;
         border-radius: 20px;
-        padding: 5px 15px;
+        padding: 5px 30px;
         background-color: white;
+        transition: .4s ease all;
+
+        &:hover {
+            background-color: rgb(231, 231, 231);
+        }
     }
     &__title {
         color: $light-blue;
@@ -61,6 +67,9 @@
     }
     &__list {
         list-style-image: url('../assets/elipse.svg');
+    }
+    &__list-item {
+        margin-bottom: 7px;
     }
 }
 

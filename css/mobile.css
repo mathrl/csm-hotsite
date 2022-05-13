@@ -12,7 +12,7 @@
   text-align: center;
 }
 .banner__line {
-  width: 30%;
+  width: 20%;
   height: 4px;
   margin-bottom: 8px;
   background-color: #082148;
@@ -39,9 +39,14 @@
 }
 .content__button {
   border: 1px solid #082148;
+  font-size: 1.2rem;
   border-radius: 20px;
-  padding: 5px 15px;
+  padding: 5px 30px;
   background-color: white;
+  transition: 0.4s ease all;
+}
+.content__button:hover {
+  background-color: #e7e7e7;
 }
 .content__title {
   color: #042a5b;
@@ -51,6 +56,9 @@
 }
 .content__list {
   list-style-image: url("../assets/elipse.svg");
+}
+.content__list-item {
+  margin-bottom: 7px;
 }
 
 .footer {
